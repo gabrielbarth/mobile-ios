@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MovieSummaryView: View {
+    let summary: String
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("Sinopsis")
@@ -15,9 +17,9 @@ struct MovieSummaryView: View {
                 .font(.title3)
                 .fontWeight(.semibold)
                 .padding(.horizontal)
-            
+
             ScrollView {
-                Text("This movie is awesome! It's a great adventure with a lot of action and humor.")
+                Text(summary)
             }
             .padding(.horizontal)
             .padding(.bottom)
@@ -30,5 +32,5 @@ struct MovieSummaryView: View {
 }
 
 #Preview {
-    MovieSummaryView()
+    MovieSummaryView(summary: "Esse filme é o melhor filme de todos os tempos e nenhum barra ele!!!")
 }
