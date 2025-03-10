@@ -14,16 +14,16 @@ struct MainView: View {
         TabView {
             MoviesView()
                 .tabItem {
-                    Label("Filmes", systemImage: "movieclapper.fill")
+                    Label("Movies", systemImage: "movieclapper.fill")
                 }
             MapView()
                 .tabItem {
-                    Label("Mapa", systemImage: "map.fill")
+                    Label("Map", systemImage: "map.fill")
                 }
 
             SettingsView()
                 .tabItem {
-                    Label("Ajustes", systemImage: "gearshape")
+                    Label("Settings", systemImage: "gearshape")
                 }
         }
         .tint(colorFor(index: color))
